@@ -18,7 +18,7 @@ class NewPost extends Component {
       author: this.state.author,
     };
     axios.post("/posts", data).then((response) => {
-      console.log(response);
+      // console.log(response);
     });
   };
 
@@ -34,7 +34,7 @@ class NewPost extends Component {
         />
         <label>Content</label>
         <textarea
-          rows="4"
+          rows="2"
           value={this.state.content}
           onChange={(event) => this.setState({ content: event.target.value })}
         />
